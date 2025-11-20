@@ -20,56 +20,20 @@
       <thead>
         <tr>
           <th
-            class="
-              px-5
-              py-3
-              text-sm
-              not-italic
-              font-medium
-              leading-5
-              text-left text-gray-700
-              border-t border-b border-gray-200 border-solid
-            "
+            class="px-5 py-3 text-sm not-italic font-medium leading-5 text-left text-gray-700 border-t border-b border-gray-200 border-solid"
           ></th>
           <th
-            class="
-              px-5
-              py-3
-              text-sm
-              not-italic
-              font-medium
-              leading-5
-              text-left text-gray-700
-              border-t border-b border-gray-200 border-solid
-            "
+            class="px-5 py-3 text-sm not-italic font-medium leading-5 text-left text-gray-700 border-t border-b border-gray-200 border-solid"
           >
             {{ $t('settings.customization.component') }}
           </th>
           <th
-            class="
-              px-5
-              py-3
-              text-sm
-              not-italic
-              font-medium
-              leading-5
-              text-left text-gray-700
-              border-t border-b border-gray-200 border-solid
-            "
+            class="px-5 py-3 text-sm not-italic font-medium leading-5 text-left text-gray-700 border-t border-b border-gray-200 border-solid"
           >
             {{ $t('settings.customization.Parameter') }}
           </th>
           <th
-            class="
-              px-5
-              py-3
-              text-sm
-              not-italic
-              font-medium
-              leading-5
-              text-left text-gray-700
-              border-t border-b border-gray-200 border-solid
-            "
+            class="px-5 py-3 text-sm not-italic font-medium leading-5 text-left text-gray-700 border-t border-b border-gray-200 border-solid"
           ></th>
         </tr>
       </thead>
@@ -88,16 +52,7 @@
             </td>
             <td class="px-5 py-4">
               <label
-                class="
-                  block
-                  text-sm
-                  not-italic
-                  font-medium
-                  text-primary-800
-                  whitespace-nowrap
-                  mr-2
-                  min-w-[200px]
-                "
+                class="block text-sm not-italic font-medium text-primary-800 whitespace-nowrap mr-2 min-w-[200px]"
               >
                 {{ element.label }}
               </label>
@@ -189,7 +144,11 @@
     @click="submitForm"
   >
     <template #left="slotProps">
-      <BaseIcon v-if="!isSaving" :class="slotProps.class" name="ArrowDownOnSquareIcon" />
+      <BaseIcon
+        v-if="!isSaving"
+        :class="slotProps.class"
+        name="ArrowDownOnSquareIcon"
+      />
     </template>
     {{ $t('settings.customization.save') }}
   </BaseButton>
@@ -386,8 +345,8 @@ function removeComponent(component) {
 function onUpdate(val, element) {
   switch (element.name) {
     case 'SERIES':
-      if (val.length >= 6) {
-        val = val.substring(0, 6)
+      if (val.length >= 7) {
+        val = val.substring(0, 7)
       }
       break
     case 'DELIMITER':

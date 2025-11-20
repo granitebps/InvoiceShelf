@@ -1001,7 +1001,7 @@
       "component": "Component",
       "Parameter": "Parameter",
       "series": "Series",
-      "series_description": "To set a static prefix/postfix like 'INV' across your company. It supports character length of up to 6 chars.",
+      "series_description": "To set a static prefix/postfix like 'INV' across your company. It supports character length of up to 7 chars.",
       "series_param_label": "Series Value",
       "delimiter": "Delimiter",
       "delimiter_description": "Single character for specifying the boundary between 2 separate components. By default its set to -",

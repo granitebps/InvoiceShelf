@@ -151,7 +151,7 @@ class SerialNumberFormatter
 
     public static function getPlaceholders(string $format)
     {
-        $regex = '/{{([A-Z_]{1,})(?::)?([a-zA-Z0-9_]{1,6}|.{1})?}}/';
+        $regex = '/{{([A-Z_]{1,})(?::)?([a-zA-Z0-9_]{1,7}|.{1})?}}/';
 
         preg_match_all($regex, $format, $placeholders);
         array_shift($placeholders);
